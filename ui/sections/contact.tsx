@@ -10,14 +10,14 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <Container isHero={false}>
-      <div className="w-full h-full max-w-[1000px] mx-auto flex flex-col-reverse sm:flex-row">
+      <div className="w-full h-full max-w-[1000px] mx-auto flex flex-col-reverse justify-evenly sm:flex-row pb-8">
         <form autoComplete="false" className="w-full sm:w-1/2 h-full flex flex-col items-center justify-center">
           <TextInput placeholder="Your name" type="text" />
           <TextInput placeholder="Your email" type="email" />
           <TextArea placeholder="Your message" />
           <Button text="Send" onClick={() => {}} type="primary" />
         </form>
-        <div className="w-full sm:w-1/2 max-w-[300px] h-full flex flex-col items-center justify-center mx-auto mb-4">
+        <div className="w-full sm:w-1/2 max-w-[300px] h-full flex flex-col items-center justify-center mx-auto mb-2">
           <Title text="Write me a message" size="sm" />
           <p className="my-2">I will answer as soon as possible.</p>
           <p className="text-center mb-4">

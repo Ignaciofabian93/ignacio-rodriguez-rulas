@@ -16,7 +16,7 @@ export default function Container({ children, isHero = false }: Container) {
           "items-center justify-center": isHero,
           "items-start justify-start": !isHero,
         },
-        "w-full max-h-screen max-w-[1400px]",
+        "w-full h-full max-w-[1400px]",
         "flex flex-col mx-auto",
         "px-[2rem] pt-[1rem]",
         "overflow-y-scroll",

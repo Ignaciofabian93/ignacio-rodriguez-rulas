@@ -4,7 +4,7 @@ export default function NavBar({ children }: { children: React.ReactNode }) {
   return (
     <nav
       className={clsx(
-        "fixed top-2",
+        "fixed top-2 z-50",
         "w-[99%] min-w-[400px] max-w-[700px] h-[60px] px-4 py-2",
         "flex items-center justify-evenly"
       )}

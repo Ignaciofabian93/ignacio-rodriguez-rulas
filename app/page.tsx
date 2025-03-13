@@ -55,7 +55,7 @@ export default function Main() {
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           initialSlide={0}
           pagination={{ clickable: true }}
-          className="w-full h-[90%]"
+          className="w-full h-full"
         >
           {sections.map((section, index) => (
             <SwiperSlide key={index}>{section}</SwiperSlide>
