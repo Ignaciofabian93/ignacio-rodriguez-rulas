@@ -21,6 +21,17 @@ li {
   list-style-type: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--accent) !important;
+}
+
 .background {
   background: linear-gradient(135deg, #0f172a, #1e293b, #334155, #0f766e);
 }
