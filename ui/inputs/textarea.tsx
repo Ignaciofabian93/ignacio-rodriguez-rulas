@@ -6,7 +6,7 @@ export default function TextArea(props: TextArea) {
   return (
     <textarea
       {...props}
-      autoComplete="false"
+      autoComplete="new-password"
       className={clsx(
         "w-full h-[200px]",
         "rounded-[5px]",

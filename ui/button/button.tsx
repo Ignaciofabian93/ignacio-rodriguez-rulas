@@ -1,15 +1,17 @@
 import clsx from "clsx";
 
 type Button = {
-  onClick: () => void;
+  onClick?: () => void;
   text: string;
   type: "primary" | "secondary";
+  isSubmit?: boolean;
 };
 
-export default function Button({ onClick, text, type = "primary" }: Button) {
+export default function Button({ onClick, text, type = "primary", isSubmit = false }: Button) {
   return (
     <button
       onClick={onClick}
+      type={isSubmit ? "submit" : "button"}
       className={clsx(
         {
           "border-[var(--accent)] text-[var(--accent)]": type === "primary",

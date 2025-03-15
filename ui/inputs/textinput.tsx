@@ -7,7 +7,7 @@ export default function TextInput({ type, ...rest }: TextInput) {
     <input
       type={type}
       {...rest}
-      autoComplete="false"
+      autoComplete="new-password"
       className={clsx(
         "w-full h-[48px]",
         "rounded-[5px]",
@@ -22,6 +22,10 @@ export default function TextInput({ type, ...rest }: TextInput) {
         "focus:border-[var(--accent)] focus:brightness-200",
         "placeholder:text-[var(--accent)] placeholder:opacity-50"
       )}
+      style={{
+        backgroundColor: "inherit",
+        caretColor: "var(--accent)",
+      }}
     />
   );
 }
