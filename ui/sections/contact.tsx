@@ -78,7 +78,7 @@ export default function Contact() {
           <TextArea placeholder="Your message" name="message" value={formData.message} onChange={handleChange} />
           <Button text="Send" type="primary" isSubmit />
         </form>
-        <div className="w-full sm:w-1/2 max-w-[300px] h-full flex flex-col items-center justify-center mx-auto mb-2">
+        <div className="w-full sm:w-1/2 max-w-[300px] h-[80%] flex flex-col items-center justify-center mx-auto mb-2">
           <Title text="Write me a message" size="sm" />
           <p className="my-2">I will answer as soon as possible.</p>
           <p className="text-center mb-4">

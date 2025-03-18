@@ -21,6 +21,10 @@ li {
   list-style-type: none;
 }
 
+.bullet-points {
+  list-style-type: disc;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

@@ -6,9 +6,6 @@ type Container = {
 };
 
 export default function Container({ children, isHero = false }: Container) {
-  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    console.log(e);
-  };
   return (
     <article
       className={clsx(
@@ -22,7 +19,6 @@ export default function Container({ children, isHero = false }: Container) {
         "overflow-y-scroll",
         "no-scrollbar"
       )}
-      onClick={handleClick}
     >
       {children}
     </article>
