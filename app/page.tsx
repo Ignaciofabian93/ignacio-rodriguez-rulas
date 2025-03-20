@@ -6,6 +6,7 @@ import { Carousel } from "@/ui/carousel/carousel";
 import { Hero, About, Skills, Contact, Projects } from "@/ui/sections";
 import { NavigationMenu } from "@/constants/data/navigation";
 import NavBar from "@/ui/navigation/navbar";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,6 +14,7 @@ import "swiper/css/pagination";
 
 export default function Main() {
   const [currentSection, setCurrentSection] = useState(0);
+  const [expandedCard, setExpandedCard] = useState<number | null>(null);
   const swiperRef = useRef<SwiperCore | null>(null);
 
   const sections: JSX.Element[] = [
@@ -25,7 +27,7 @@ export default function Main() {
     />,
     <About key={1} />,
     <Skills key={2} />,
-    <Projects key={3} />,
+    <Projects key={3} expandedCard={expandedCard} setExpandedCard={setExpandedCard} />,
     <Contact key={4} />,
   ];
 
@@ -62,6 +64,15 @@ export default function Main() {
           ))}
         </Swiper>
       </Carousel.Wrapper>
+      {expandedCard !== null && (
+        <motion.div
+          className="fixed top-0 bg-black/50 backdrop-blur-lg z-0 w-screen h-screen"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setExpandedCard(null)}
+        />
+      )}
     </Carousel>
   );
 }

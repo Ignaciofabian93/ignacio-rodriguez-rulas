@@ -1,11 +1,23 @@
+import clsx from "clsx";
 import Button from "../button/button";
 import Title from "../title/title";
+import { motion } from "framer-motion";
 
 export default function Card({ children }: { children: React.ReactNode }) {
   return (
-    <div className="w-full max-w-[300px] h-full max-h-[400px] flex flex-col items-center justify-between py-4 rounded-lg bg-slate-700/40 backdrop-blur-xl shadow-xl">
+    <motion.div
+      animate={{
+        transition: { duration: 0.3, ease: "easeInOut" },
+      }}
+      className={clsx(
+        "min-w-[300px] min-h-[400px] flex flex-col items-center justify-between py-4",
+        "rounded-lg bg-slate-700/40 backdrop-blur-xl shadow-xl",
+        "transition-all duration-300 ease-in-out",
+        "hover:brightness-125"
+      )}
+    >
       {children}
-    </div>
+    </motion.div>
   );
 }
 
@@ -18,13 +30,13 @@ Card.Header = function ({ title }: { title: string }) {
 } as React.FC<{ title: string }>;
 
 Card.Body = function ({ children }: { children: React.ReactNode }) {
-  return <div className="w-full h-[calc(100%_-_90px)] px-4 py-2">{children}</div>;
+  return <div className="w-full h-[calc(100%_-_90px)] px-4 py-2 flex items-center">{children}</div>;
 } as React.FC<{ children: React.ReactNode }>;
 
-Card.Footer = function () {
+Card.Footer = function ({ onClick, text }: { onClick: () => void; text: string }) {
   return (
     <div className="w-full h-[50px] flex items-center justify-center">
-      <Button text="See more" type="primary" />
+      <Button text={text} type="primary" onClick={onClick} />
     </div>
   );
-} as React.FC;
+} as React.FC<{ onClick: () => void; text: string }>;
