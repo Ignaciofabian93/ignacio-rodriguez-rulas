@@ -23,14 +23,14 @@ export default function Card({ children }: { children: React.ReactNode }) {
 
 Card.Header = function ({ title }: { title: string }) {
   return (
-    <div className="w-full h-[40px] flex items-center justify-center">
+    <div className="w-[80%] h-[50px] flex items-start justify-center text-center">
       <Title text={title} size="xs" />
     </div>
   );
 } as React.FC<{ title: string }>;
 
 Card.Body = function ({ children }: { children: React.ReactNode }) {
-  return <div className="w-full h-[calc(100%_-_90px)] px-4 py-2 flex items-center">{children}</div>;
+  return <div className="w-[100%] h-full px-8 py-2 flex items-center">{children}</div>;
 } as React.FC<{ children: React.ReactNode }>;
 
 Card.Footer = function ({ onClick, text }: { onClick: () => void; text: string }) {

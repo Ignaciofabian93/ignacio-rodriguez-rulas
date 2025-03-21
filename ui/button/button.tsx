@@ -14,9 +14,10 @@ export default function Button({ onClick, text, type = "primary", isSubmit = fal
       type={isSubmit ? "submit" : "button"}
       className={clsx(
         {
-          "border-[var(--accent)] text-[var(--accent)]": type === "primary",
-          "border-[var(--text)] text-[var(--text)]": type === "secondary",
+          "border-[var(--accent)]": type === "primary",
+          "border-[var(--text)]": type === "secondary",
         },
+        "text-[var(--text)]",
         "border-[2px]",
         "min-w-[120px] h-[40px] px-4 mx-2 my-1",
         "rounded-[5px]",

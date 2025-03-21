@@ -262,5 +262,5 @@ I also build strong communication with my colleagues, and they trust me with cri
 export const paragraph4 = `
 Recently, at Walmart, I had to learn about Nx to work with monorepos, GraphQL with Apollo, analyze dashboards using Grafana, and continuously improve the code
 and test for an expedite deployment process. I am also collaborating with both local and international teams, working with professionals from United States, 
-Canada and Mexico.
+Canada, India and Mexico.
 `;

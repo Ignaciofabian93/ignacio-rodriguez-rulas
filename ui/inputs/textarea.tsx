@@ -13,7 +13,7 @@ export default function TextArea(props: TextArea) {
         "my-2 px-4 py-2",
         "bg-transparent",
         "border-[2px] border-[var(--accent)]",
-        "text-[var(--accent)]",
+        "text-[var(--text)]",
         "backdrop-blur-lg",
         "transition-all ease-in-out duration-200",
         "brightness-150",

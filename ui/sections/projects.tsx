@@ -16,31 +16,53 @@ type Data = {
   details: React.ReactNode;
 };
 
+const Description: React.FC<{ summary: string; stack: string }> = ({ summary, stack }) => {
+  return (
+    <div className="w-full flex flex-col items-start justify-between min-h-[200px] h-full text-pretty">
+      <p className="w-full mb-4 text-base">{summary}</p>
+      <p className="text-sm">
+        <b>Stack:</b> {stack}
+      </p>
+    </div>
+  );
+};
+
 const projectsData: Data[] = [
   {
     id: 1,
-    title: "VIN & Car Plate Label Printing App",
+    title: "Lider.cl / Walmart Chile",
     description: (
-      <div className="w-full flex flex-col items-start justify-between h-3/4 text-pretty my-auto">
-        <p className="w-full">
-          Android App made for a company specialized on car windows labeling to compliance with Chilean government
-          regulations
-        </p>
-        <p>
-          <b>Stack:</b> React Native - Expo - SQLite
-        </p>
-      </div>
+      <Description
+        summary="Walmart bought Lider supermarket on 2008. Nowadays they are becoming a wide world platform and I'm currently working on that migration with US, Canada, India and Mexico."
+        stack="Nx - NextJs - GraphQL"
+      />
     ),
     details: (
-      <div>
-        <p>asjashjsahjsa</p>
+      <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
+        <p>
+          My main responsibility now is work on the migration of old system to a the new one planned by US team. We
+          cover from the web application to subgraphs with different services.
+        </p>
+        <p>
+          At this point every line of code matters, every change is reviewed with care across all teams involved in the
+          area of work
+        </p>
+        <p>
+          A regular day consists in bug fixing, add a new feature, meetings during the whole day, dashboard metrics
+          analysis with tools such as Grafana or Splunk, support other teams and deployments of new app versions.
+        </p>
       </div>
     ),
   },
   {
     id: 2,
     title: "Agrobooks",
-    description: <div>ashsajhasj</div>,
+    description: (
+      <Description
+        summary="Android & iOS Apps to keep track on agricultural processes covering from seed characteristics, chemical products and phenological stages among others."
+        stack="React Native - Expo - SQLite"
+      />
+    ),
     details: (
       <div>
         <p>asjashjsahjsa</p>
@@ -50,7 +72,12 @@ const projectsData: Data[] = [
   {
     id: 3,
     title: "Fertilization Hub",
-    description: <div>ashsajhasj</div>,
+    description: (
+      <Description
+        summary="Web application used as a chemical product calculator for different type of crops depending on soil check results and type of product."
+        stack="NextJs - Firebase - Zustand"
+      />
+    ),
     details: (
       <div>
         <p>asjashjsahjsa</p>
@@ -59,11 +86,53 @@ const projectsData: Data[] = [
   },
   {
     id: 4,
-    title: "Lider.cl",
-    description: <div>ashsajhasj</div>,
+    title: "VIN & Car Plate Label Printing App",
+    description: (
+      <Description
+        summary="Android app developed for a company specializing in car window labeling to comply with Chilean government regulations."
+        stack="React Native - Expo - SQLite"
+      />
+    ),
     details: (
-      <div>
-        <p>asjashjsahjsa</p>
+      <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
+        <p>
+          I developed an Android app for a thermal printer used to print labels and record VIN numbers, car plates, and
+          logos on car windows.
+        </p>
+        <p>
+          I started the React Native project using Expo. Since Expo provides several modules for native functionalities,
+          it was the fastest option, considering I had only three months to plan, design, and develop the app.
+        </p>
+        <p>
+          I had to study the printer documentation to understand how it worked and its internal connections. The printer
+          connects via Bluetooth, so initially, I implemented a native module inside the React Native app to print label
+          information. This approach worked fine for text and numbers but failed when printing logos.
+        </p>
+        <p>
+          Eventually, I decided to use the Expo Print module, which worked perfectly with the printer. It took me a few
+          days to fine-tune the label dimensions to meet legal requirements.
+        </p>
+        <p>
+          The app integrates with an admin panel I built using Next.js, where business owners can manage information
+          such as users, branches, car brands, and logos. This panel connects to a backend server built with Node.js,
+          Express, Prisma, and PostgreSQL. Admins store data in the database, and app users can sync and refresh the
+          local SQLite database.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: "Agrosat Platform",
+    description: (
+      <Description
+        summary="Main Agrosat's platform for spacial geological soil studies for client from Brazil, Mexico and Chile."
+        stack="NextJs - Leaflet - WMS"
+      />
+    ),
+    details: (
+      <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
+        <p></p>
       </div>
     ),
   },
