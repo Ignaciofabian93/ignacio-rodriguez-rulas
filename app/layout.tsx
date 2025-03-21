@@ -14,8 +14,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ignacio Rodríguez Rulas",
-  description: "Software Engineer",
+  title: "Ignacio Rodríguez Rulas | Software Engineer",
+  description:
+    "Experienced Software Engineer with expertise in full-stack development, React, Next.js, mobile development, and more.",
+  keywords:
+    "Ignacio Rodríguez Rulas, software engineer, React, Next.js, full-stack developer, mobile development, web development, JavaScript, TypeScript, React Native, Expo",
+  authors: [{ name: "Ignacio Rodríguez Rulas", url: "https://www.ignaciorodriguez.net" }],
+  viewport: "width=device-width, initial-scale=1.0",
+  robots: "index, follow",
+
+  openGraph: {
+    title: "Ignacio Rodríguez Rulas | Software Engineer",
+    description:
+      "Explore the portfolio and projects of Ignacio Rodríguez Rulas, a software engineer specializing in full-stack and mobile development.",
+    url: "https://www.ignaciorodriguez.net",
+    siteName: "Ignacio Rodríguez Rulas",
+    images: [
+      {
+        url: "https://www.ignaciorodriguez.net/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ignacio Rodríguez Rulas | Software Engineer",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
