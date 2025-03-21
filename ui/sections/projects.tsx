@@ -54,6 +54,16 @@ const projectsData: Data[] = [
           A typical day involves bug fixing, implementing new features, attending meetings, analyzing dashboard metrics
           using tools like Grafana and Splunk, supporting other teams, and deploying new application versions.
         </p>
+        <p>
+          The work environment is fully conducted in English, both spoken and written. My previous experience working as
+          a freelancer in Ireland has been highly beneficial, allowing me to communicate effectively with engineers,
+          managers, and stakeholders across different markets.
+        </p>
+        <p>
+          Collaboration and mentorship play a crucial role in my team. I actively mentor colleagues in areas where I
+          have expertise, while also learning from others to strengthen my own skills. I encourage open discussions,
+          share ideas, and contribute to problem-solving efforts, ensuring that knowledge flows freely across the team.
+        </p>
       </div>
     ),
   },
@@ -82,6 +92,11 @@ const projectsData: Data[] = [
           in crop data and required a photo as proof of the visit, ensuring the accuracy and reliability of the recorded
           information.
         </p>
+        <p>
+          I took this opportunity to mentor a teammate who was eager to learn mobile development. I divided tasks
+          strategically, ensuring we collaborated effectively from project initiation to deployment on both the Google
+          Play Store and the App Store.
+        </p>
       </div>
     ),
   },
@@ -90,19 +105,28 @@ const projectsData: Data[] = [
     title: "Fertilization Hub",
     description: (
       <Description
-        summary="Web application used as a chemical product calculator for different type of crops depending on soil check results and type of product."
-        stack="NextJs - Firebase - Zustand"
+        summary="A web application that acts as a chemical product calculator for different crop types, based on soil test results and selected fertilizers."
+        stack="Next.js - Firebase - Zustand"
       />
     ),
     details: (
       <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
         <p>
-          This web app consisted in a calculator for chemical products depending on which crop the user selects and what
-          the soil check result are (levels of macro and micro nutrients).
+          This web app functions as a calculator for chemical fertilizers, helping users determine the optimal mix based
+          on their selected crop and soil test results, which include macro and micronutrient levels.
         </p>
         <p>
-          The main purpose was to get a NPK (Nitrogen, Phosphorus, Potassium) quantity for the fertilizer mix and how to
-          combine it with others that can support with micro nutrients such as Calcium, Magnesium or Zinc.
+          The main goal is to calculate the required amounts of nitrogen (N), phosphorus (P), and potassium (K)
+          --collectively known as NPK among agronomists--for the fertilizer mix. Additionally, it suggests combinations
+          with other nutrients such as calcium, magnesium, and zinc to ensure balanced fertilization.
+        </p>
+        <p>
+          Once the correct fertilizer composition is determined, the app calculates the mix for 1,000 kg, the standard
+          measurement used by fertilizer suppliers.
+        </p>
+        <p>
+          Finally, the app generates a detailed report, outlining the specific quantities of each product for
+          macronutrients and micronutrients, the final fertilizer mix, and the number of bags required for application.
         </p>
       </div>
     ),
@@ -141,6 +165,13 @@ const projectsData: Data[] = [
           Express, Prisma, and PostgreSQL. Admins store data in the database, and app users can sync and refresh the
           local SQLite database.
         </p>
+        <p>
+          A few months before starting this project, I met a student at the Coding Dojo Bootcamp. I noticed he and other
+          students were struggling with the material, logic, and other challenges. I reached out and offered private
+          lessons at a very affordable price, considering the expensive tuition of the bootcamp. As the company also
+          needed a new website, I assigned this task to one of my students. He did a great job while I supervised and
+          provided guidance.
+        </p>
       </div>
     ),
   },
@@ -149,13 +180,61 @@ const projectsData: Data[] = [
     title: "Agrosat Platform",
     description: (
       <Description
-        summary="Main Agrosat's platform for spacial geological soil studies for client from Brazil, Mexico and Chile."
-        stack="NextJs - Leaflet - WMS"
+        summary="Agrosat's main platform for spatial geological soil studies, serving clients in Brazil, Mexico, and Chile."
+        stack="Next.js - Leaflet - WMS"
       />
     ),
     details: (
       <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
-        <p></p>
+        <p>
+          During my last two months at Agrosat, I led the development of an MVP for the frontend of the main Agrosat
+          platform. The web app featured a map (built with Leaflet) and widgets on the sides for selecting tools,
+          accessing administration panels, and adjusting settings.
+        </p>
+        <p>
+          Users could upload land data in KMZ or KML format and visualize polygons on the map. They could then purchase
+          various soil study services and track their data year by year.
+        </p>
+        <p>
+          The backend team delivered these services via a WMS server, enabling the rasterization of multiple layers over
+          the land areas with data collected by the geomatic team.
+        </p>
+        <p>
+          Around this time, I was contacted by Walmart with an opportunity to join their team. However, I chose to delay
+          my departure to ensure the completion of the MVP within the two-month deadline. Once the project was finalized
+          and fully documented, I transitioned to this new professional challenge.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: "Private Lessons & YouTube Channel",
+    description: (
+      <Description
+        summary="I gave private lessons to students from Coding Dojo Bootcamp who were struggling with the material. I also started a YouTube channel to share experiences and tips."
+        stack="FrontEnd - BackEnd - Linux"
+      />
+    ),
+    details: (
+      <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
+        <p>
+          While I was attending Coding Dojo Bootcamp, which I started because I wanted a certification (as a self-taught
+          developer, I felt the need to have something to validate my knowledge, especially here in Chile, even though I
+          was already working and had experience), I met students who were struggling to understand the lessons and the
+          underlying logic. So, I offered private lessons to them at an affordable price.
+        </p>
+        <p>
+          We used Skype to meet, and we focused on covering the basics and resolving any doubts before moving on to more
+          advanced material. The students were really motivated and committed to learning, and I realized that I enjoyed
+          playing this mentoring role. Sometimes, I didn’t even charge for certain lessons.
+        </p>
+        <p>
+          Afterward, I got the idea of adding educational content to a YouTube channel. However, creating content has
+          proven to be difficult due to time constraints and less-than-ideal conditions (such as noise, urgent work
+          tasks, and dealing with fatigue). Despite these challenges, I am committed to this project, as I want to help
+          others solve the problems I once faced—problems that were a real struggle to overcome.
+        </p>
       </div>
     ),
   },
