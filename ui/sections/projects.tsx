@@ -33,23 +33,26 @@ const projectsData: Data[] = [
     title: "Lider.cl / Walmart Chile",
     description: (
       <Description
-        summary="Walmart bought Lider supermarket on 2008. Nowadays they are becoming a wide world platform and I'm currently working on that migration with US, Canada, India and Mexico."
-        stack="Nx - NextJs - GraphQL"
+        summary="Walmart acquired Lider Supermarket in 2008. Today, they are evolving into a global platform, and I am currently working on that migration alongside teams from the US, Canada, India, and Mexico."
+        stack="Nx - Next.js - GraphQL"
       />
     ),
     details: (
       <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
         <p>
-          My main responsibility now is work on the migration of old system to a the new one planned by US team. We
-          cover from the web application to subgraphs with different services.
+          My primary responsibility is migrating the legacy system to the new architecture designed by the US team. This
+          migration spans from the web application to subgraphs and various backend services.
         </p>
         <p>
-          At this point every line of code matters, every change is reviewed with care across all teams involved in the
-          area of work
+          At this stage, every line of code matters. Every change undergoes careful review across all involved teams.
+          When adding or modifying a feature, I must consider whether it impacts other markets or is specific to ours.
+          If it does affect multiple markets, I analyze its potential impact and whether similar functionality already
+          exists. Before implementing any change, we conduct a thorough evaluation to ensure reusability across
+          different regions.
         </p>
         <p>
-          A regular day consists in bug fixing, add a new feature, meetings during the whole day, dashboard metrics
-          analysis with tools such as Grafana or Splunk, support other teams and deployments of new app versions.
+          A typical day involves bug fixing, implementing new features, attending meetings, analyzing dashboard metrics
+          using tools like Grafana and Splunk, supporting other teams, and deploying new application versions.
         </p>
       </div>
     ),
@@ -59,13 +62,26 @@ const projectsData: Data[] = [
     title: "Agrobooks",
     description: (
       <Description
-        summary="Android & iOS Apps to keep track on agricultural processes covering from seed characteristics, chemical products and phenological stages among others."
+        summary="Android & iOS apps for tracking agricultural processes, covering seed characteristics, chemical products, phenological stages, and more."
         stack="React Native - Expo - SQLite"
       />
     ),
     details: (
-      <div>
-        <p>asjashjsahjsa</p>
+      <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
+        <p>
+          Agrobooks is a suite of applications I maintained and developed from scratch for Agrosat. These apps function
+          as digital logs, allowing farmers to track the phenological stages of crops, estimate harvest dates, and
+          maintain a historical record of the entire process. They are primarily used in Chile, with some also deployed
+          in Mexico.
+        </p>
+        <p>
+          One of the last projects I developed was a variation of the standard Agrobooks apps. The app was designed for
+          crop inspectors responsible for monitoring different agricultural areas. It featured a map for geolocating
+          crops, allowing inspectors to select which area to inspect first. Once a crop was selected, the app calculated
+          a route and opened Waze to guide the user to the destination. Upon arrival, the app presented a form to fill
+          in crop data and required a photo as proof of the visit, ensuring the accuracy and reliability of the recorded
+          information.
+        </p>
       </div>
     ),
   },
@@ -79,8 +95,15 @@ const projectsData: Data[] = [
       />
     ),
     details: (
-      <div>
-        <p>asjashjsahjsa</p>
+      <div className="w-full h-[92%] overflow-y-scroll flex flex-col items-start justify-start no-scrollbar">
+        <p>
+          This web app consisted in a calculator for chemical products depending on which crop the user selects and what
+          the soil check result are (levels of macro and micro nutrients).
+        </p>
+        <p>
+          The main purpose was to get a NPK (Nitrogen, Phosphorus, Potassium) quantity for the fertilizer mix and how to
+          combine it with others that can support with micro nutrients such as Calcium, Magnesium or Zinc.
+        </p>
       </div>
     ),
   },
