@@ -8,7 +8,7 @@ export default function Modal({ children }: { children: React.ReactNode }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       className={clsx(
-        "fixed top-4 left-1 right-1 sm:left-[20%] sm:right-[20%] w-full sm:w-[60%] h-[90%] z-50 py-8 px-2",
+        "fixed top-4 left-[3%] right-[3%] sm:left-[20%] sm:right-[20%] w-[94%] sm:w-[60%] h-[90%] z-50 py-8 px-2",
         "flex flex-col items-center justify-center",
         "bg-slate-700/70 backdrop-blur-xl",
         "transition-all duration-300 ease-in-out",
