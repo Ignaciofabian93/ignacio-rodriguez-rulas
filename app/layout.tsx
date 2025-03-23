@@ -39,6 +39,7 @@ export default function RootLayout({
           content="Explore the portfolio and projects of Ignacio Rodríguez Rulas, a software engineer specializing in full-stack and mobile development."
         />
         <meta property="og:title" content="Ignacio Rodríguez Rulas | Software Engineer" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <meta
           property="og:description"
           content="Explore the portfolio and projects of Ignacio Rodríguez Rulas, a software engineer specializing in full-stack and mobile development."
