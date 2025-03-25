@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     "Ignacio Rodríguez Rulas, software engineer, React, Next.js, full-stack developer, mobile development, web development, JavaScript, TypeScript, React Native, Expo",
   authors: [{ name: "Ignacio Rodríguez Rulas", url: "https://www.ignaciorodriguez.net" }],
   robots: "index, follow",
+  openGraph: {
+    title: "Your Website Title",
+    description: "Your website description",
+    images: ["https://ignaciorodriguez.net/og-image.jpg"],
+  },
 };
 
 export const viewport = {
