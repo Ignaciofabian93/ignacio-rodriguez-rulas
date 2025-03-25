@@ -1,5 +1,15 @@
 const Grafana = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    x="0px"
+    y="0px"
+    width="35"
+    height="35"
+    viewBox="0 0 48 48"
+    role="img"
+    aria-labelledby="Grafana"
+  >
+    <title>Grafana</title>
     <linearGradient
       id="jIYxgsP_yq-lafjo32ajaa_9uVrNMu3Zx1K_gr1"
       x1="23.373"

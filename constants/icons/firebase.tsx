@@ -1,6 +1,16 @@
 import type { SVGProps } from "react";
 const Firebase = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 600 600" {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    fill="none"
+    viewBox="0 0 600 600"
+    {...props}
+    role="img"
+    aria-labelledby="Firebase"
+  >
+    <title>Firebase</title>
     <path
       fill="#FF9100"
       d="M213.918 560.499c23.248 9.357 48.469 14.909 74.952 15.834 35.84 1.252 69.922-6.158 100.391-20.234-36.537-14.355-69.627-35.348-97.869-61.448-18.306 29.31-45.382 52.462-77.474 65.848Z"

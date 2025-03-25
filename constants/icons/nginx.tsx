@@ -1,6 +1,16 @@
 export default function NginX() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="35"
+      height="35"
+      viewBox="0 0 48 48"
+      role="img"
+      aria-labelledby="Nginx"
+    >
+      <title>Nginx</title>
       <polygon fill="#43a047" points="43,35.112 43,13.336 24,2.447 5,13.336 5,35.112 24,46"></polygon>
       <path
         fill="#fff"

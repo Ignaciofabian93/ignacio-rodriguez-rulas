@@ -6,8 +6,11 @@ const PostgreSQL = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 432.071 445.383"
     width="1em"
     height="1em"
+    role="img"
+    aria-labelledby="PostgreSQL"
     {...props}
   >
+    <title>PostgreSQL</title>
     <g
       style={{
         fillRule: "nonzero",

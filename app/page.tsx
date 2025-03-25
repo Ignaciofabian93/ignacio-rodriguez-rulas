@@ -33,7 +33,7 @@ export default function Main() {
 
   return (
     <Carousel>
-      <header className="w-full flex items-center justify-center overflow-x-auto scrollbar-hide">
+      <header className="w-full flex items-center justify-center overflow-x-auto no-scrollbar">
         <NavBar>
           {NavigationMenu.map((el, index) => (
             <NavBar.Link

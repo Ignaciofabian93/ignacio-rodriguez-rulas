@@ -1,6 +1,15 @@
 import type { SVGProps } from "react";
 const Linux = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 295" {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 256 295"
+    {...props}
+    role="img"
+    aria-labelledby="Linux"
+  >
+    <title>Linux</title>
     <defs>
       <linearGradient id="logosLinuxTux0" x1="48.548%" x2="51.047%" y1="115.276%" y2="41.364%">
         <stop offset="0%" stopColor="#FFEED7" />

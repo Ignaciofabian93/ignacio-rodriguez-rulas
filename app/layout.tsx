@@ -21,8 +21,12 @@ export const metadata: Metadata = {
   keywords:
     "Ignacio Rodríguez Rulas, software engineer, React, Next.js, full-stack developer, mobile development, web development, JavaScript, TypeScript, React Native, Expo",
   authors: [{ name: "Ignacio Rodríguez Rulas", url: "https://www.ignaciorodriguez.net" }],
-  viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
@@ -38,8 +42,9 @@ export default function RootLayout({
           name="description"
           content="Explore the portfolio and projects of Ignacio Rodríguez Rulas, a software engineer specializing in full-stack and mobile development."
         />
+
+        {/* Open Graph (OG) meta tags for Facebook & LinkedIn */}
         <meta property="og:title" content="Ignacio Rodríguez Rulas | Software Engineer" />
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <meta
           property="og:description"
           content="Explore the portfolio and projects of Ignacio Rodríguez Rulas, a software engineer specializing in full-stack and mobile development."
@@ -50,6 +55,23 @@ export default function RootLayout({
         <meta property="og:image" content="https://www.ignaciorodriguez.net/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@your_twitter_handle" />
+        <meta name="twitter:creator" content="@your_twitter_handle" />
+        <meta name="twitter:title" content="Ignacio Rodríguez Rulas | Software Engineer" />
+        <meta
+          name="twitter:description"
+          content="Explore the portfolio and projects of Ignacio Rodríguez Rulas, a software engineer specializing in full-stack and mobile development."
+        />
+        <meta name="twitter:image" content="https://www.ignaciorodriguez.net/og-image.jpg" />
+
+        <link rel="icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ToastContainer position="bottom-center" theme="light" autoClose={2000} icon={undefined} />

@@ -1,5 +1,15 @@
 const Vite = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    x="0px"
+    y="0px"
+    width="35"
+    height="35"
+    viewBox="0 0 48 48"
+    role="img"
+    aria-labelledby="Vite"
+  >
+    <title>Vite</title>
     <linearGradient
       id="oOTIjsOjTqJdvfy5S4iCZa_dJjTWMogzFzg_gr1"
       x1="13.315"

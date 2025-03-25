@@ -6,8 +6,11 @@ const React = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 569 512"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
+    role="img"
+    aria-labelledby="React"
     {...props}
   >
+    <title>ReactJs</title>
     <g fill="none" fillRule="evenodd">
       <g transform="translate(-227, -256)" fill="#58C4DC" fillRule="nonzero">
         <g transform="translate(227, 256)">

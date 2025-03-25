@@ -10,8 +10,11 @@ const HackTheBox = (props: SVGProps<SVGSVGElement>) => (
     xmlSpace="preserve"
     width="2em"
     height="2em"
+    role="img"
+    aria-labelledby="HackTheBox"
     {...props}
   >
+    <title>HackTheBox</title>
     <style type="text/css">{"\n\t.st0{fill:#9FEF00;}\n"}</style>
     <path
       className="st0"

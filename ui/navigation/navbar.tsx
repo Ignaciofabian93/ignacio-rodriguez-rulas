@@ -9,7 +9,7 @@ export default function NavBar({ children }: { children: React.ReactNode }) {
         "flex items-center justify-evenly"
       )}
     >
-      {children}
+      <ul className="w-full flex items-center justify-evenly">{children}</ul>
     </nav>
   );
 }

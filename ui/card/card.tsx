@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import Button from "../button/button";
-import Title from "../title/title";
 import { motion } from "framer-motion";
 
 export default function Card({ children }: { children: React.ReactNode }) {
@@ -24,7 +23,7 @@ export default function Card({ children }: { children: React.ReactNode }) {
 Card.Header = function ({ title }: { title: string }) {
   return (
     <div className="w-[80%] h-[50px] flex items-start justify-center text-center">
-      <Title text={title} size="xs" />
+      <span className="text-md mb-2 font-semibold">{title}</span>
     </div>
   );
 } as React.FC<{ title: string }>;

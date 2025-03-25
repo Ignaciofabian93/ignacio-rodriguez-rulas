@@ -6,8 +6,11 @@ const JWT = (props: SVGProps<SVGSVGElement>) => (
     height="1em"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
+    role="img"
+    aria-labelledby="Jason Web Token"
     {...props}
   >
+    <title>Jason Web Token</title>
     <path
       fill="#FFF"
       d="M147.386 69.071 147.129 0h-38.515l.257 69.071 19.257 26.448zM108.871 187.442v69.328h38.515v-69.328l-19.258-26.447z"

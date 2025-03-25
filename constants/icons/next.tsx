@@ -1,6 +1,16 @@
 import type { SVGProps } from "react";
 const Nextjs = (props: SVGProps<SVGSVGElement>) => (
-  <svg width="1em" height="1em" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg
+    width="1em"
+    height="1em"
+    viewBox="0 0 180 180"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+    role="img"
+    aria-labelledby="NextJs"
+  >
+    <title>NextJs</title>
     <mask
       id="mask0_408_139"
       style={{

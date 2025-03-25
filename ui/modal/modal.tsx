@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Button from "../button/button";
+import Title from "../title/title";
 
 export default function Modal({ children }: { children: React.ReactNode }) {
   return (
@@ -23,7 +24,7 @@ export default function Modal({ children }: { children: React.ReactNode }) {
 Modal.Header = function ({ text }: { text: string }) {
   return (
     <div className="w-full h-[40px] flex items-center justify-center py-8">
-      <h1 className="text-2xl font-bold text-white text-center">{text}</h1>
+      <Title text={text} size="md" />
     </div>
   );
 } as React.FC<{ text: string }>;

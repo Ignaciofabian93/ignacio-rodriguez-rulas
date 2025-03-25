@@ -51,6 +51,37 @@ input:-webkit-autofill {
   scrollbar-width: none; /* Firefox */
 }
 
+/* Custom scrollbar */
+.scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--accent) var(--contrast); /* Firefox */
+}
+
+/* Chrome, Safari, Edge */
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  transition: width 0.3s ease-in-out;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: var(--contrast);
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--transitions);
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.scrollbar:hover::-webkit-scrollbar {
+  width: 10px; /* Slightly increase width on hover */
+}
+
+.scrollbar:hover::-webkit-scrollbar-thumb {
+  background: var(--accent); /* Change thumb color on hover */
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0%);

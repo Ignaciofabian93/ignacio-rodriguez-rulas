@@ -5,7 +5,6 @@ import TextArea from "../inputs/textarea";
 import TextInput from "../inputs/textinput";
 import Container from "../layouts/container";
 import YouTube from "@/constants/icons/youtube";
-import Title from "../title/title";
 import Link from "next/link";
 import { toast } from "react-toastify";
 
@@ -79,7 +78,7 @@ export default function Contact() {
           <Button text="Send" type="primary" isSubmit />
         </form>
         <div className="w-full sm:w-1/2 max-w-[300px] h-[80%] flex flex-col items-center justify-center mx-auto mb-2">
-          <Title text="Write me a message" size="sm" />
+          <p className="text-xl mb-2">Write me a message</p>
           <p className="my-2">I will answer as soon as possible.</p>
           <p className="text-center mb-4">
             You can also check my social media. I am uploading videos and some material to share my experience and

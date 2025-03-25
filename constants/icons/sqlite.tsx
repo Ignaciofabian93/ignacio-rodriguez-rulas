@@ -6,8 +6,11 @@ const SQLite = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 512 228"
     width="1em"
     height="1em"
+    role="img"
+    aria-labelledby="SQLite"
     {...props}
   >
+    <title>SQLite</title>
     <defs>
       <linearGradient x1="57.7%" y1="2%" x2="57.7%" y2="94.4%" id="a">
         <stop stopColor="#97D9F6" offset="0%" />

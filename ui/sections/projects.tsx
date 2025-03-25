@@ -257,7 +257,7 @@ export default function Projects({ expandedCard, setExpandedCard }: Projects) {
           solutions I implemented, and the tools I used.*
         </motion.p>
         <div className="my-4 w-full max-w-[1000px] h-full mx-auto relative z-50">
-          <div className="flex flex-col sm:flex-row items-center gap-4 overflow-x-auto no-scrollbar w-[calc(100vw_%_1000px)] h-[95%] py-4">
+          <div className="flex flex-col sm:flex-row items-center gap-4 overflow-x-auto scrollbar w-[calc(100vw_%_1000px)] h-[95%] py-4 transition-all duration-300 ease-in-out">
             {projectsData.map(({ id, title, description, details }) => (
               <div key={id} className="w-full h-full">
                 <Card>

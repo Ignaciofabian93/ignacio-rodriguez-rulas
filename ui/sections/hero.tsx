@@ -19,7 +19,7 @@ export default function Hero({ onClick }: Hero) {
     <Container isHero>
       <div className="w-full flex flex-col items-center text-center">
         <Title text="Ignacio Rodríguez Rulas" size="xl" />
-        <Title text="Software Engineer" size="sm" />
+        <p className="text-xl mb-2">Software Engineer</p>
       </div>
       <div className="flex items-center my-4">
         <Button text="Get in touch" type="primary" onClick={onClick} />

@@ -1,6 +1,5 @@
 import { currentStatus, experience, goals } from "@/constants/data/about";
 import Container from "../layouts/container";
-import Title from "../title/title";
 
 type Section = {
   data: string;
@@ -10,7 +9,7 @@ type Section = {
 const Section = ({ data, title }: Section) => {
   return (
     <div className="my-4 w-full max-w-[1000px] mx-auto">
-      <Title text={title} size="sm" />
+      <p className="text-xl mb-2">{title}</p>
       <div className="w-full text-pretty">
         <p>{data}</p>
       </div>
