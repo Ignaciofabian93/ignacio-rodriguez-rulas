@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Your Website Title",
     description: "Your website description",
-    images: ["https://ignaciorodriguez.net/og-image.jpg"],
+    images: ["https://ignaciorodriguez.net/og-image-v2.jpg"],
   },
 };
 
@@ -57,20 +57,18 @@ export default function RootLayout({
         <meta property="og:url" content="https://www.ignaciorodriguez.net" />
         <meta property="og:site_name" content="Ignacio Rodríguez Rulas" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.ignaciorodriguez.net/og-image.jpg" />
+        <meta property="og:image" content="https://www.ignaciorodriguez.net/og-image-v2.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@your_twitter_handle" />
-        <meta name="twitter:creator" content="@your_twitter_handle" />
         <meta name="twitter:title" content="Ignacio Rodríguez Rulas | Software Engineer" />
         <meta
           name="twitter:description"
           content="Explore the portfolio and projects of Ignacio Rodríguez Rulas, a software engineer specializing in full-stack and mobile development."
         />
-        <meta name="twitter:image" content="https://www.ignaciorodriguez.net/og-image.jpg" />
+        <meta name="twitter:image" content="https://www.ignaciorodriguez.net/og-image-v2.jpg" />
 
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
