@@ -2,11 +2,12 @@ import clsx from "clsx";
 import Button from "../button/button";
 import { motion } from "framer-motion";
 
-export default function Card({ children }: { children: React.ReactNode }) {
+export default function Card({ children, expandedCard }: { children: React.ReactNode; expandedCard: null | number }) {
   return (
     <motion.div
       animate={{
         transition: { duration: 0.3, ease: "easeInOut" },
+        opacity: expandedCard !== null ? 0.2 : 1,
       }}
       className={clsx(
         "min-w-[300px] min-h-[400px] flex flex-col items-center justify-between py-4",

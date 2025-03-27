@@ -209,7 +209,7 @@ const projectsData: Data[] = [
   },
   {
     id: 6,
-    title: "Private Lessons & YouTube Channel",
+    title: "Lessons & YouTube Channel",
     description: (
       <Description
         summary="I gave private lessons to students from Coding Dojo Bootcamp who were struggling with the material. I also started a YouTube channel to share experiences and tips."
@@ -256,11 +256,11 @@ export default function Projects({ expandedCard, setExpandedCard }: Projects) {
           applications I developed or contributed to. However, I can provide explanations of the challenges I faced, the
           solutions I implemented, and the tools I used.*
         </motion.p>
-        <div className="my-4 w-full max-w-[1000px] h-full mx-auto relative z-50">
-          <div className="flex flex-col sm:flex-row items-center gap-4 overflow-x-auto scrollbar w-[calc(100vw_%_1000px)] h-[95%] py-4 transition-all duration-300 ease-in-out">
+        <div className="my-4 w-full max-w-[1000px] h-full mx-auto relative z-50 pb-[2rem]">
+          <div className="flex flex-col sm:flex-row items-center gap-4 overflow-x-auto scrollbar w-[calc(100vw_%_1000px)] h-[100%] sm:h-fit py-4 transition-all duration-300 ease-in-out">
             {projectsData.map(({ id, title, description, details }) => (
               <div key={id} className="w-full h-full">
-                <Card>
+                <Card expandedCard={expandedCard}>
                   <Card.Header title={title} />
                   <Card.Body>{description}</Card.Body>
                   <Card.Footer
